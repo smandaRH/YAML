@@ -1,0 +1,97 @@
+#  List
+
+
+student: !!seq
+  -marks
+  -name
+  -branch
+  -id
+
+  # or in anthor way
+student:[marks,name,branch,id]
+
+
+# some of the keys of the swquence is empty --> sparse seq
+
+#  SPARSE SEQ
+sparse seq:
+  -hey
+  -hello
+  -hi
+  -
+  -Null
+  -sup
+
+# sub lists or sub sequences
+-
+  -mango
+  -apple
+  -banana
+-
+  -rose
+  -jasmine
+  -sunflower
+-
+
+
+# key:value pair are called maps 
+!!map
+
+# nested maps
+name:manda supraja
+role: { age:78, job:student }
+
+# pairs:keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+ - job: student
+ - branch: IT
+ - subject: AI
+ # this is arrays stored in hash map
+
+ pairs exaple : !!pairs [ job: forntend ,marks: 98] 
+
+
+#  !!set will allow to have unique values
+names: !!set
+  ? kunal
+  ? supraja
+  ? vinay
+  ? rahul
+  ? rahul
+
+# # names: !!set
+#   ? kunal
+#   ? supraja
+#   ? vinay
+#   ? rahul
+#   ?
+#   ? njn
+
+# dictionary !!omap
+pepole: !!omap
+  - manda:
+    name: Manda Supraja
+    age: 21
+    height: 5.0
+  -Rahul:
+    name: rahul
+    age: 22
+    height: 5.6
+
+
+# resuing some properties using anchors
+likes: 
+  fav fruit: mango
+  dislike : apple
+
+person1: 
+  name: supraja
+  <<: *likes
+  dislikes: berries #overridden by the likes function
+
+person2:
+  name: rahul
+  <<: *likes
+  fav

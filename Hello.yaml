@@ -1,0 +1,77 @@
+"apple": "this is a red fruit"
+"1290": "Manda Supraja"
+# --- saparater 
+---
+
+# lists
+-supraja
+-vinay
+-Vinay
+---
+
+cities:
+ -new delhi
+ -hyd
+ -kerala
+# ... end of document
+
+---
+cities: [hello,hey]
+---
+{mangoes: "yello fruit",age:56}
+
+
+---
+number: 45.78
+marks: 98
+booleanValue: No #n,N,false,False,FALSE
+
+# Same for the True --> y,Y,true,True,TRUE
+
+# SPECIFY THE TYPE
+
+    # for integrs
+zero: !!int 0
+positiveNum: !!int 90
+negitiveNum: !!int -30
+binaryNum: !!int 0b11001
+octaNumber: !!int 06574
+hexalNum: !!int 0x45
+commaValue: !!int +547_000 #547,000
+exponential numbers: 6.023E56
+
+# floating points
+simpleNumber: !!float 56.89
+infinite: !!float .inf
+not a num : .nan
+
+# for boolean 
+boolNum: !!bool No 
+
+
+
+# **NULL**
+surname: !!null Null #or null NULL ~
+~: this is a null key
+
+# arrays
+-manasa
+-hima gouri
+-ranjith
+-lavanya
+-kamakshi
+
+# dates and Time
+canonical:        2001-12-15T02:59:43.1Z
+valid iso8601:    2001-12-14t21:59:43.10-05:00
+space separated:  2001-12-14 21:59:43.10 -5
+no time zone (Z): 2001-12-15 2:59:43.10
+date : 2002-12-14
+
+dateToday : !!timestamp 
+india time : 2001-12-15T02:59:43.10 +5:30
+today:2001-12-15T02:59:43.10
+
+
+
+...

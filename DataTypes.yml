@@ -1,0 +1,18 @@
+# strings
+name:Manda Supraja
+fruit:mango
+job:Devops
+
+#  for multiple lines
+bio: |
+my name manda supraja
+i'm intresed in devops
+
+
+# write in single line
+msg: >
+this is supraja 
+Manda
+
+# same as 
+msg: this is supraja manda
