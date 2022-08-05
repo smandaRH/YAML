@@ -95,3 +95,4 @@ person2:
   name: rahul
   <<: *likes
   fav
+...
